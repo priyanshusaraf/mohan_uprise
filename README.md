@@ -1,3 +1,36 @@
+# Mohan Uprise Pvt Ltd — Website (Next.js + shadcn/ui)
+
+This is the website app for **Mohan Uprise Pvt Ltd**, built with **Next.js (App Router)**, **Tailwind CSS**, and **shadcn/ui**.
+
+## Run locally
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000`.
+
+## Edit content
+
+Most website text and lists (clients, consultants, leadership, contact details) live in:
+
+- `src/content/company.ts`
+
+## Pages
+
+- Home: `src/app/page.tsx`
+- About: `src/app/about/page.tsx`
+- Clients: `src/app/clients/page.tsx`
+- Projects: `src/app/projects/page.tsx`
+- Contact: `src/app/contact/page.tsx`
+
+## Notes
+
+- The **Services** page is intentionally on hold; the navigation links to the Home section: `/#services`.
+- The contact form uses a **mailto** flow (opens the visitor’s email app). Configure a server email route later if desired.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
