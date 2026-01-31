@@ -74,7 +74,11 @@ export default function AboutPage() {
                   <div className="relative w-full bg-secondary md:w-56">
                     <div className="relative aspect-[4/3] md:h-full md:aspect-auto">
                       <Image
-                        src={member.image ?? "/placeholder-hero.svg"}
+                        src={
+                          member.image
+                            ? encodeURI(member.image)
+                            : "/placeholder-hero.svg"
+                        }
                         alt={`${member.name} portrait`}
                         fill
                         className="object-cover"

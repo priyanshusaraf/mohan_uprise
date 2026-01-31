@@ -80,11 +80,6 @@ export const company: Company = {
       logo: "/Client/Bengal Greenfield.jpg",
     },
     {
-      name: "Bengal Greenfield",
-      logo: "/Client/Bengal Greenfield.png",
-      note: "Alternate logo",
-    },
-    {
       name: "Auricas",
       logo: "/Client/Auricas.jpg",
     },
@@ -120,7 +115,7 @@ export const company: Company = {
     {
       name: "Mohan Tibrewal",
       role: "Founder and Director",
-      image: "/placeholder-hero.svg",
+      image: "/Directors /Mohan.jpeg",
       bio: [
         "With over 25 years of extensive experience in the construction and real estate industry, he has been a driving force behind the company's steady growth, strong reputation, and commitment to excellence. Over the years, he has successfully led and delivered a wide range of residential, commercial, and infrastructural projects, consistently adhering to the highest standards of quality, safety, and timely execution.",
         "What began as the vision of a young graduate stepping into the construction industry has, through unwavering determination, hard work, and perseverance, evolved into a trusted and respected enterprise.",
@@ -131,7 +126,7 @@ export const company: Company = {
     {
       name: "Varsha Tibrewal",
       role: "Director",
-      image: "/placeholder-hero.svg",
+      image: "/Directors /Varsha.jpeg",
       bio: [
         "One of the Directors of the company, while being a dedicated homemaker and family anchor, has been an integral partner in the company's journey. A woman of strong character, determination, and vision, she has consistently balanced personal responsibilities with professional commitment.",
         "Her unwavering belief, ambitious outlook, and steadfast support have played a vital role in strengthening the company and driving its growth toward greater heights.",
@@ -140,7 +135,7 @@ export const company: Company = {
     {
       name: "Yuvraj Tibrewal",
       role: "Leadership",
-      image: "/placeholder-hero.svg",
+      image: "/Directors /Yuvraj.jpeg",
       bio: [
         "Representing the next generation of leadership, he has recently joined the company with a strong commitment to carrying forward its legacy of quality, trust, and excellence in the construction industry.",
         "He is actively involved in understanding on-ground operations, project execution, and client relations, ensuring that traditional strengths are complemented by innovation, efficiency, and contemporary management approaches.",
@@ -177,44 +172,44 @@ export const company: Company = {
         image: "/Ongoing/Aqua Waves.jpg",
       },
       {
-        name: "GKB Gariahat",
-        image: "/Ongoing/GKB-Gariahat.jpg",
-      },
-      {
-        name: "GKB Office Building Kasba",
-        image: "/Ongoing/GKB-Office Building Kasba.jpg",
-      },
-      {
-        name: "Greenfield City Phase 2",
-        image: "/Ongoing/Greenfield City Phase 2.jpg",
-      },
-      {
-        name: "Greenfield City Phase 1",
+        name: "Green Field Phase 1",
         image: "/Ongoing/Greenfiled City Phase 1.avif",
       },
       {
-        name: "Natural City Madhyamgram",
-        image: "/Ongoing/Natural City Madhyamgram.jpg",
+        name: "Green Field Phase 2",
+        image: "/Ongoing/Greenfield City Phase 2.jpg",
+      },
+      {
+        name: "Upantika Township",
+        image: "/Ongoing/upantika Township.jpg",
       },
       {
         name: "Natural Luxuria",
         image: "/Ongoing/Natural Luxuria.jpg",
       },
       {
-        name: "Natural Majesty",
-        image: "/Ongoing/natural majesty.jpg",
+        name: "Natural City, Madhyamgram",
+        image: "/Ongoing/Natural City Madhyamgram.jpg",
       },
       {
         name: "Nevada",
         image: "/Ongoing/Nevada.png",
       },
       {
+        name: "Natural Majesty",
+        image: "/Ongoing/natural majesty.jpg",
+      },
+      {
         name: "Omya",
         image: "/Ongoing/Omya.png",
       },
       {
-        name: "Upantika Township",
-        image: "/Ongoing/upantika Township.jpg",
+        name: "GKB Office Building",
+        image: "/Ongoing/GKB-Office Building Kasba.jpg",
+      },
+      {
+        name: "GKB Gariahat",
+        image: "/Ongoing/GKB-Gariahat.jpg",
       },
     ],
     completed: [

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/site/container";
-import { SectionHeading } from "@/components/site/section-heading";
 import { ServiceCard } from "@/components/site/service-card";
 import { MapEmbed } from "@/components/site/map-embed";
 import { ContactForm } from "@/components/site/contact-form";
@@ -9,18 +8,43 @@ import { ProjectCard } from "@/components/site/project-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { company } from "@/content/company";
 import { ArrowRight, PhoneCall, Mail } from "lucide-react";
 
+function SectionHeading({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+}) {
+  return (
+    <div className="space-y-2">
+      {eyebrow ? (
+        <p className="text-sm font-medium tracking-wide text-primary">
+          {eyebrow}
+        </p>
+      ) : null}
+      <h2 className="text-pretty text-2xl font-semibold tracking-tight sm:text-3xl">
+        {title}
+      </h2>
+      {description ? (
+        <p className="max-w-2xl text-pretty text-muted-foreground">
+          {description}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
 export default function Home() {
   const heroSlides = [
-    "/Ongoing/Greenfield City Phase 2.jpg",
-    "/Completed/Shantikunj.jpeg",
     "/Ongoing/Aqua Waves.jpg",
-    "/Completed/B.P. Poddar Hospital - New Wing.png",
-    "/Ongoing/Natural Luxuria.jpg",
+    "/Ongoing/Greenfield City Phase 2.jpg",
+    "/Ongoing/Natural City Madhyamgram.jpg",
     "/Completed/Natural City Birati.jpg",
   ].map((src) => encodeURI(src));
 
@@ -92,6 +116,61 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Company information */}
+      <section className="border-t bg-secondary/30">
+        <Container className="py-14">
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <p className="text-sm font-medium tracking-wide text-primary">
+                  Company
+                </p>
+                <h2 className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                  Trusted execution built on transparency
+                </h2>
+                <p className="max-w-2xl text-pretty text-muted-foreground">
+                  We focus on clear communication, ethical practices, and
+                  consistent workmanship.
+                </p>
+              </div>
+              <div className="space-y-4 text-sm text-muted-foreground sm:text-base">
+                {company.about.slice(0, 3).map((p) => (
+                  <p key={p} className="text-pretty">
+                    {p}
+                  </p>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">Integrity</Badge>
+                <Badge variant="secondary">Technical expertise</Badge>
+                <Badge variant="secondary">Customer satisfaction</Badge>
+                <Badge variant="secondary">Safety & quality control</Badge>
+              </div>
+              <div>
+                <Button variant="outline" asChild>
+                  <Link href="/about">
+                    Read our profile <ArrowRight className="ml-2 size-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center rounded-2xl bg-white p-10 shadow-sm">
+              <div className="relative w-64 max-w-full sm:w-72 lg:w-80">
+                <div className="relative aspect-square">
+                  <Image
+                    src="/mohan-uprise-logo.png"
+                    alt="Mohan Uprise logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Services */}
       <section id="services" className="border-t bg-secondary/30">
         <Container className="py-14">
@@ -113,89 +192,6 @@ export default function Home() {
             Note: A dedicated Services page is on hold for now; the service
             overview is maintained here on the Home page.
           </p>
-        </Container>
-      </section>
-
-      {/* Company information */}
-      <section className="border-t bg-secondary/30">
-        <Container className="py-14">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-            <div className="space-y-4">
-              <SectionHeading
-                eyebrow="Company"
-                title="Trusted execution built on transparency"
-                description="We focus on clear communication, ethical practices, and consistent workmanship."
-              />
-              <div className="space-y-3 text-sm text-muted-foreground">
-                {company.about.slice(0, 2).map((p) => (
-                  <p key={p} className="text-pretty">
-                    {p}
-                  </p>
-                ))}
-              </div>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="secondary">Integrity</Badge>
-                <Badge variant="secondary">Technical expertise</Badge>
-                <Badge variant="secondary">Customer satisfaction</Badge>
-                <Badge variant="secondary">Safety & quality control</Badge>
-              </div>
-              <div className="pt-2">
-                <Button variant="outline" asChild>
-                  <Link href="/about">
-                    Read our profile <ArrowRight className="ml-2 size-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            <Card className="overflow-hidden">
-              <CardContent className="p-0">
-                <div className="relative aspect-[16/9] bg-secondary">
-                  <Image
-                    src="/Completed/Shantikunj.jpeg"
-                    alt="Company project highlight"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <Separator />
-                <div className="p-6">
-                  <p className="text-sm font-semibold">Office details</p>
-                  <div className="mt-3 space-y-2 text-sm text-muted-foreground">
-                    <p>
-                      <span className="font-medium text-foreground">
-                        Address:
-                      </span>{" "}
-                      {company.address.line1}, {company.address.line2},{" "}
-                      {company.address.city} {company.address.postalCode}
-                    </p>
-                    <p>
-                      <span className="font-medium text-foreground">Email:</span>{" "}
-                      <a
-                        className="hover:underline"
-                        href={`mailto:${company.email}`}
-                      >
-                        {company.email}
-                      </a>
-                    </p>
-                    <p>
-                      <span className="font-medium text-foreground">Phone:</span>{" "}
-                      <a className="hover:underline" href={`tel:${company.phone}`}>
-                        {company.phone}
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <Separator />
-                <div className="p-6">
-                  <p className="text-sm font-semibold">Working hours</p>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Monday to Saturday • 10:30 AM – 7:00 PM
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </Container>
       </section>
 
