@@ -8,7 +8,6 @@ import { Menu } from "lucide-react";
 const nav = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/#services" },
   { label: "Clients", href: "/clients" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
