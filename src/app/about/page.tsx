@@ -81,7 +81,7 @@ export default function AboutPage() {
                         }
                         alt={`${member.name} portrait`}
                         fill
-                        className="object-cover"
+                        className="object-cover object-top md:object-center"
                       />
                     </div>
                   </div>
