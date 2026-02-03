@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   },
   description:
     "Mohan Uprise Pvt Ltd is committed to delivering high-quality, durable, and cost-efficient construction projects across residential, commercial, and infrastructure.",
+  icons: {
+    icon: "/mohan-uprise-logo.png",
+    apple: "/mohan-uprise-logo.png",
+  },
 };
 
 export default function RootLayout({
