@@ -188,10 +188,7 @@ export default function Home() {
               />
             ))}
           </div>
-          <p className="mt-6 text-xs text-muted-foreground">
-            Note: A dedicated Services page is on hold for now; the service
-            overview is maintained here on the Home page.
-          </p>
+         
         </Container>
       </section>
 
