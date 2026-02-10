@@ -10,6 +10,35 @@ import { company } from "@/content/company";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Ongoing and completed projects overview.",
+  keywords: [
+    "Mohan Uprise",
+    "Mohan Uprise Pvt Ltd",
+    "construction projects Kolkata",
+    "real estate builders in Kolkata",
+    "infrastructure projects Kolkata",
+  ],
+  alternates: {
+    canonical: "/projects",
+  },
+  openGraph: {
+    title: "Mohan Uprise Pvt Ltd Projects",
+    description: "Ongoing and completed projects overview.",
+    url: "/projects",
+    images: [
+      {
+        url: "/landing-hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Mohan Uprise Pvt Ltd projects",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohan Uprise Pvt Ltd Projects",
+    description: "Ongoing and completed projects overview.",
+    images: ["/landing-hero.svg"],
+  },
 };
 
 export default function ProjectsPage() {

@@ -11,6 +11,35 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Clients",
   description: "A list of valued clients we have worked with.",
+  keywords: [
+    "Mohan Uprise",
+    "Mohan Uprise Pvt Ltd",
+    "construction company Kolkata",
+    "real estate builders in Kolkata",
+    "commercial construction Kolkata",
+  ],
+  alternates: {
+    canonical: "/clients",
+  },
+  openGraph: {
+    title: "Mohan Uprise Pvt Ltd Clients",
+    description: "A list of valued clients we have worked with.",
+    url: "/clients",
+    images: [
+      {
+        url: "/landing-hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Mohan Uprise Pvt Ltd clients",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohan Uprise Pvt Ltd Clients",
+    description: "A list of valued clients we have worked with.",
+    images: ["/landing-hero.svg"],
+  },
 };
 
 export default function ClientsPage() {

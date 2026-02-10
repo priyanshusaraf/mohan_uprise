@@ -10,6 +10,35 @@ import { company } from "@/content/company";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with Mohan Uprise Pvt Ltd.",
+  keywords: [
+    "Mohan Uprise",
+    "Mohan Uprise Pvt Ltd",
+    "contact Mohan Uprise",
+    "construction company Kolkata",
+    "real estate builders in Kolkata",
+  ],
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Mohan Uprise Pvt Ltd",
+    description: "Get in touch with Mohan Uprise Pvt Ltd.",
+    url: "/contact",
+    images: [
+      {
+        url: "/landing-hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Mohan Uprise Pvt Ltd",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Mohan Uprise Pvt Ltd",
+    description: "Get in touch with Mohan Uprise Pvt Ltd.",
+    images: ["/landing-hero.svg"],
+  },
 };
 
 export default function ContactPage() {

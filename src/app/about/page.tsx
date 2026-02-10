@@ -10,6 +10,35 @@ import { company } from "@/content/company";
 export const metadata: Metadata = {
   title: "About Us",
   description: "Company profile, leadership team, and consultants.",
+  keywords: [
+    "Mohan Uprise",
+    "Mohan Uprise Pvt Ltd",
+    "Mohan Uprise Kolkata",
+    "construction company Kolkata",
+    "real estate builders in Kolkata",
+  ],
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Mohan Uprise Pvt Ltd",
+    description: "Company profile, leadership team, and consultants.",
+    url: "/about",
+    images: [
+      {
+        url: "/landing-hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Mohan Uprise Pvt Ltd",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Mohan Uprise Pvt Ltd",
+    description: "Company profile, leadership team, and consultants.",
+    images: ["/landing-hero.svg"],
+  },
 };
 
 export default function AboutPage() {

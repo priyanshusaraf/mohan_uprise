@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/site/container";
@@ -11,6 +12,48 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { company } from "@/content/company";
 import { ArrowRight, PhoneCall, Mail } from "lucide-react";
+
+const siteDescription =
+  "Mohan Uprise Pvt Ltd is a real estate builder in Kolkata delivering residential, commercial, and infrastructure projects with a focus on quality, safety, and on-time delivery.";
+
+export const metadata: Metadata = {
+  title: "Real Estate Builders in Kolkata",
+  description: siteDescription,
+  keywords: [
+    "Mohan Uprise",
+    "Mohan Uprise Pvt Ltd",
+    "Mohan Uprise Kolkata",
+    "real estate builders in Kolkata",
+    "real estate builders near me",
+    "construction company Kolkata",
+    "residential builders Kolkata",
+    "commercial construction Kolkata",
+    "infrastructure projects Kolkata",
+    "civil construction Kolkata",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Mohan Uprise Pvt Ltd | Real Estate Builders in Kolkata",
+    description: siteDescription,
+    url: "/",
+    images: [
+      {
+        url: "/landing-hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Mohan Uprise Pvt Ltd hero",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohan Uprise Pvt Ltd | Real Estate Builders in Kolkata",
+    description: siteDescription,
+    images: ["/landing-hero.svg"],
+  },
+};
 
 function SectionHeading({
   eyebrow,
