@@ -86,6 +86,7 @@ function SectionHeading({
 export default function Home() {
   const heroSlides = [
     "/Ongoing/Aqua Waves.jpg",
+    // "/Ongoing/The 96.jpg",
     "/Ongoing/Greenfield City Phase 2.jpg",
     "/Ongoing/Natural City Madhyamgram.jpg",
     "/Completed/Natural City Birati.jpg",

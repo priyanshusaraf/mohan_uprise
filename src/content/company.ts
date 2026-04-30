@@ -67,9 +67,14 @@ export const company: Company = {
       name: "Srijan Realty Pvt Ltd",
       logo: "/Client/Srijan.jpg",
     },
+    
     {
       name: "Merlin Group",
       logo: "/Client/Merlin.jpg",
+    },
+    {
+      name: "Nirmala Group",
+      logo: "/Client/Nirmala Group.jpg",
     },
     {
       name: "Natural Group",
@@ -172,8 +177,17 @@ export const company: Company = {
         image: "/Ongoing/Aqua Waves.jpg",
       },
       {
+        name: "The 96",
+        image: "/Ongoing/The 96.jpg",
+      },
+      
+      {
         name: "Green Field Phase 1",
         image: "/Ongoing/Greenfiled City Phase 1.avif",
+      },
+      {
+        name: "Nirmala Pratham",
+        image: "/Ongoing/Nirmala Pratham.jpg",
       },
       {
         name: "Green Field Phase 2",
