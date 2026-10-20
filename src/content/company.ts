@@ -186,6 +186,10 @@ export const company: Company = {
         image: "/Ongoing/Greenfiled City Phase 1.avif",
       },
       {
+        name: "Nirmala Ozone",
+        image: "/Ongoing/Nirmala Ozone.webp",
+      },
+      {
         name: "Nirmala Pratham",
         image: "/Ongoing/Nirmala Pratham.jpg",
       },
